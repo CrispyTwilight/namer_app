@@ -1,4 +1,6 @@
-import 'dart:math';
+// Auth: John O'Neal
+// Date: 05/24/2024
+// Desc: The main dart file for the namer app. This follows the Google Codelab with some small modifications.
 
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
@@ -61,10 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
     switch (selectedIndex) {
       case 0:
         page = GeneratorPage();
-        break;
       case 1:
         page = FavoritesPage();
-        break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
     }
